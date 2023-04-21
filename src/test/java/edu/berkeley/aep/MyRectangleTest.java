@@ -20,6 +20,12 @@ public class MyRectangleTest {
         MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
         assertTrue(r1.contains(1,1));
     }
+    @Test
+    public void rectangleOneWidthFIVEHeightSIXShouldContainRectangleTwoWidthFOURHeightFIVE(){
+        MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
+        MyRectangle r2 = new MyRectangle(0, 0, 4, 5);
+        assertTrue(r1.contains(r2));
+    }
 
 
 
