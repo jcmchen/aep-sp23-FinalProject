@@ -31,6 +31,11 @@ public class MyRectangleTest {
         MyRectangle r2 = new MyRectangle(0, 0, 4, 5);
         assertTrue(r1.contains(r2));
     }
+    @Test
+    public void rectangleOneWidthFIVEHeightSIXShouldOverlapItself(){
+        MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
+        assertTrue(r1.overlaps(r1));
+    }
 
 
 
