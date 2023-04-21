@@ -10,5 +10,11 @@ public class MyRectangleTest {
         assertEquals(30, r1.getArea());
     }
 
+    @Test
+    public void perimeterOfRectangleOneWidthFIVEHeightSIXShouldBeTWENTYTWO(){
+        MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
+        assertEquals(22, r1.getPerimeter());
+    }
+
 
 }
