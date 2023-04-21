@@ -26,7 +26,7 @@ public class MyRectangleTest {
         assertTrue(r1.contains(r1));
     }
     @Test
-    public void rectangleOneWidthFIVEHeightSIXShouldContainRectangleTWOWidthFOURHeightFIVE(){
+    public void rectangleOneWidthFIVEHeightSIXShouldContainRectangleTwoWidthFOURHeightFIVE(){
         MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
         MyRectangle r2 = new MyRectangle(0, 0, 4, 5);
         assertTrue(r1.contains(r2));
@@ -35,6 +35,12 @@ public class MyRectangleTest {
     public void rectangleOneWidthFIVEHeightSIXShouldOverlapItself(){
         MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
         assertTrue(r1.overlaps(r1));
+    }
+    @Test
+    public void rectangleOneWidthFIVEHeightSIXShouldOverlapRectangleThreeWidth(){
+        MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
+        MyRectangle r3 = new MyRectangle(0, 0, 8, 4);
+        assertTrue(r1.overlaps(r3));
     }
 
 
