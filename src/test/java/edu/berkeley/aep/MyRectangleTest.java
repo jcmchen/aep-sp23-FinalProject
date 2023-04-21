@@ -16,7 +16,7 @@ public class MyRectangleTest {
         assertEquals(22, r1.getPerimeter());
     }
     @Test
-    public void rectangleOneShouldContainPointONEONE(){
+    public void rectangleOneWidthFIVEHeightSIXShouldContainPointONEONE(){
         MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
         assertTrue(r1.contains(1,1));
     }
