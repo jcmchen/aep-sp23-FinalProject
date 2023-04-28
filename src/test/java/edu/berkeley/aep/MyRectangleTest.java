@@ -48,5 +48,12 @@ public class MyRectangleTest {
         assertFalse(r1.contains(3,1));
     }
 
+    @Test
+    public void rectangleTwoWidthFOURHeightFIVEShouldNotContainRectangleOneWidthFIVEHeightSIX(){
+        MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
+        MyRectangle r2 = new MyRectangle(0, 0, 4, 5);
+        assertFalse(r2.contains(r1));
+    }
+
 
 }
