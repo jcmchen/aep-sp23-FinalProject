@@ -55,5 +55,12 @@ public class MyRectangleTest {
         assertFalse(r2.contains(r1));
     }
 
+    @Test
+    public void rectangleOneWidthFIVEHeightSIXShouldNotOverlapRectangleTwoWidthFOURHeightFIVE(){
+        MyRectangle r1 = new MyRectangle(0, 0, 5, 6);
+        MyRectangle r2 = new MyRectangle(0, 0, 4, 5);
+        assertTrue(r1.overlaps(r2));
+    }
+
 
 }
